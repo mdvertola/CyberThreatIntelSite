@@ -11,6 +11,7 @@ import { IndustryComponent } from './industry/industry.component';
 import { ThreatModelsComponent } from './threat-models/threat-models.component';
 import { DataComponent } from './data/data.component';
 import { OpIntelComponent } from './op-intel/op-intel.component';
+import { IntelligenceBuyInComponent } from './intelligence-buy-in/intelligence-buy-in.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OpIntelComponent } from './op-intel/op-intel.component';
     IndustryComponent,
     ThreatModelsComponent,
     DataComponent,
-    OpIntelComponent
+    OpIntelComponent,
+    IntelligenceBuyInComponent
   ],
   imports: [
     BrowserModule,

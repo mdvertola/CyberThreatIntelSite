@@ -23,6 +23,11 @@ export class NavComponent implements OnInit {
   threatmodels(){
     this.router.navigate(['threatmodels'])
   }
+
+  buyin(){
+    this.router.navigate(['intelligencebuyin'])
+  }
+
   data(){
     this.router.navigate(['data'])
   }
