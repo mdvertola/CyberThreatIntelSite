@@ -121,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "mis562s21gov"
+  "defaultProject": "mis562s21gov",
+  "cli": {
+    "analytics": "7514a28e-5cf2-4e86-a512-161c67114e9c"
+  }
 }
