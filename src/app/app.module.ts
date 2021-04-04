@@ -12,6 +12,9 @@ import { ThreatModelsComponent } from './threat-models/threat-models.component';
 import { DataComponent } from './data/data.component';
 import { OpIntelComponent } from './op-intel/op-intel.component';
 import { IntelligenceBuyInComponent } from './intelligence-buy-in/intelligence-buy-in.component';
+import { AnalyticsComponent } from './analytics/analytics.component';
+import { VisualizationsComponent } from './visualizations/visualizations.component';
+import { KeyInsightsComponent } from './key-insights/key-insights.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { IntelligenceBuyInComponent } from './intelligence-buy-in/intelligence-b
     ThreatModelsComponent,
     DataComponent,
     OpIntelComponent,
-    IntelligenceBuyInComponent
+    IntelligenceBuyInComponent,
+    AnalyticsComponent,
+    VisualizationsComponent,
+    KeyInsightsComponent
   ],
   imports: [
     BrowserModule,

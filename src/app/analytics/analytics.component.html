@@ -1,0 +1,203 @@
+<br>
+<div class="row">
+    <!-- Sidebar -->
+    <div class="col-2">
+        <div class="make-me-sticky">
+            <div class="make-me-sticky">
+                <a class = "row" href="/analytics#lda"><button type="button" class="btn btn-secondary btn-block" >Topic Modeling</button></a>
+            <br>
+                <a class = "row" href="/analytics#dnn"><button type="button" class="btn btn-secondary btn-block" >Neural Network</button></a>
+            <br>
+                <a class = "row" href="/analytics#"><button type="button" class="btn btn-secondary btn-block" >Third guy</button></a>
+            <br>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- spacer -->
+    <div class="col-1"></div> 
+    
+    <!-- main text width & page title -->
+    <div class="col-8">
+        <div class="container">
+            <div class="row">
+                <h1>Analytics</h1>
+            </div>
+            <div class="row">
+                <h6>In this section we aim to leverage our collected data. We use different analytics approaches to derive relevant and useful threat intelligence. 
+                    The approaches we used are listed below.</h6>
+            </div>
+            <!-- heading1 -->
+            <div class="row" id="lda"style="height: 75px;"></div>
+            <div class="row">
+                <h3>LDA Topic Modeling</h3>
+            </div>
+            <div class="row">
+                <p>
+                    Topic modeling is an analytical approach that can be used for discovering abstract topics in a collection of documents.
+                    This approach was chosen for our Twitter dataset because there is an abundance of unstructured data, and this approach can allow us to discover the relevant topics.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h5>Steps Taken:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>First, we created a subset of the data that contained the term “healthcare”.</li>
+                            <ul>
+                                <li>We did this to filter out irrelevant information.</li>
+                            </ul>
+                            <li>Next, we created a corpus from the relevant tweets, removing all special characters and stop words.</li>
+                            <li>Last, we created an LDA model with visualizations, testing out different numbers of topics to find the most coherent model.</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5>Value added:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>This adds value in the form of organizing open source intelligence in a more interpretable fashion.</li>
+                            <li>By creating topic models we can get insight into what topics hacktivists are discussing.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <h5>Tools Used:</h5>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>Jupyter notebook</li>
+                    <li>Python</li>
+                    <li>pyLDAvis package</li>
+                </ul>
+            </div>
+            <div class="row">
+                <h5>Evaluation Method:</h5>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>Coherence score</li>
+                    <li>Intertopic distance map</li>
+                </ul>
+            </div>
+            <br>
+            <!-- heading2 -->
+            <div class="row" id="dnn"style="height: 75px;"></div>
+            <div class="row">
+                <h3>Deep Neural Network</h3>
+            </div>
+            <div class="row">
+                <p>
+                    We created a deep neural network for the purpose of creating a model that can predict if a post is related to healthcare.
+                    This can provide us with a means of identifying relevant news articles in our reddit dataset.                     
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h5>Steps Taken:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Increased Reddit collection to 8,167 posts</li>
+                            <li>Labeled collection</li>
+                            <ul>
+                                <li>Keyword searching of the following terms in reddit titles: health, hospital, covid, vaccine</li>
+                                <li>Label posts with boolean ‘related to healthcare’ attribute for a total of 69 posts related to healthcare</li>
+                            </ul>
+                            <li> Leveraged RapidMiner for text processing and rapid prototyping of model</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5>Value Added:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Allows us to detect if a post has a relation to healthcare beyond just keyword searches.</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5>Tools Used:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Reddit API : collection</li>
+                            <li>Pandas: processing and labeling</li>
+                            <li>RapidMiner: text processing (tokenization) and algorithm</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5>Evaluation Method:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Precision and recall</li>
+                            <li>Confusion matrix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <figure>
+                        <img src="../../assets/img/confusionMatrix.png">
+                        <figcaption>Deep Neural Network Confusion Matrix</figcaption>
+                    </figure>
+                </div>
+            </div>
+            
+
+            <div class="row" id=""style="height: 75px;"></div>
+            <div class="row">
+                <h3>MalwareBazaar</h3>
+            </div>
+            <div class="row">
+                <p>
+                    Collection of malware samples that can be utilized to help healthcare threat analysts protect customers and organizations from cyber threats.
+                    Heodo and CobaltStrike have both been used for ransomware attacks.
+                    Payout demands for ransomware attacks associated with Cobaltstrike have ranged from $500,000 to $10,000,000.
+                    Malware, specifically ransomware has cost the healthcare sector at least $160 million since 2016.
+                    There was a 350% increase in ransomware attacks on healthcare entities in Q4 2019 vs Q4 2018.
+                    Our datasets holds specific ransomware samples associated with the healthcare industry.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <h5>Data Attributes</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>Date Discovered</li>
+                            <li>Sha-256 hash</li>
+                            <li>Md5 hash</li>
+                            <li>File name</li>
+                            <li>File Type</li>
+                            <li>Signature (Malware Family)</li>
+                            <li>Mime Type</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h5>Dataset statistics:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>266,722 ransomware samples</li>
+                            <li>Top 10 Ransomware Families are pictured in the displayed figure.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <br>
+                    <img src="../../assets/img/figure7.png" width="75%" height="75%">
+                </div>
+            </div>
+            <br>
+
+    <!-- close page row, cols and container -->
+        </div>
+    </div>
+</div>

@@ -31,9 +31,24 @@ export class NavComponent implements OnInit {
   data(){
     this.router.navigate(['data'])
   }
+
   operationalintelligence(){
     this.router.navigate(['operationalintelligence'])
   }
+
+  analytics(){
+    this.router.navigate(['analytics'])
+  }
+
+  visualizations(){
+    this.router.navigate(['visualizations'])
+  }
+
+  keyinsights(){
+    this.router.navigate(['keyinsights'])
+  }
+
+
   about(){
     this.router.navigate(['about'])
   }
