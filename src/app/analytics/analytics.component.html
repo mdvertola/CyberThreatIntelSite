@@ -8,7 +8,7 @@
             <br>
                 <a class = "row" href="/analytics#dnn"><button type="button" class="btn btn-secondary btn-block" >Neural Network</button></a>
             <br>
-                <a class = "row" href="/analytics#"><button type="button" class="btn btn-secondary btn-block" >Third guy</button></a>
+                <a class = "row" href="/analytics#malware"><button type="button" class="btn btn-secondary btn-block" >Malware URL Identification</button></a>
             <br>
             </div>
         </div>
@@ -150,50 +150,52 @@
             </div>
             
 
-            <div class="row" id=""style="height: 75px;"></div>
+            <div class="row" id="malware"style="height: 75px;"></div>
             <div class="row">
-                <h3>MalwareBazaar</h3>
+                <h3>Malware URL Identification</h3>
             </div>
             <div class="row">
                 <p>
-                    Collection of malware samples that can be utilized to help healthcare threat analysts protect customers and organizations from cyber threats.
-                    Heodo and CobaltStrike have both been used for ransomware attacks.
-                    Payout demands for ransomware attacks associated with Cobaltstrike have ranged from $500,000 to $10,000,000.
-                    Malware, specifically ransomware has cost the healthcare sector at least $160 million since 2016.
-                    There was a 350% increase in ransomware attacks on healthcare entities in Q4 2019 vs Q4 2018.
-                    Our datasets holds specific ransomware samples associated with the healthcare industry.
+                    This approach was taken because it allows healthcare network administrators to keep track of the latest malware trends by permitting
+                    the industry to analyze where threats are originating. Additionally, it can be used as an added layer of protection in conjuncture with Anti-Malware Software.
                 </p>
             </div>
             <div class="row">
                 <div class="col">
                     <div class="row">
-                        <h5>Data Attributes</h5>
+                        <h5>Steps Taken:</h5>
                     </div>
                     <div class="row">
                         <ul>
-                            <li>Date Discovered</li>
-                            <li>Sha-256 hash</li>
-                            <li>Md5 hash</li>
-                            <li>File name</li>
-                            <li>File Type</li>
-                            <li>Signature (Malware Family)</li>
-                            <li>Mime Type</li>
+                            <li>Collected active online urls from the past 30 days</li>
+                            <li>Resolved hostname issues in the dataset</li>
+                            <li>Queried Ipinfo.io to collect the IP’s hostname, latitude, longitude, region, time zone, company, name</li>
+                            <li>Visualized the data to show the location differences between malware families</li>
                         </ul>
                     </div>
                     <div class="row">
-                        <h5>Dataset statistics:</h5>
+                        <h5>Value Added:</h5>
                     </div>
                     <div class="row">
                         <ul>
-                            <li>266,722 ransomware samples</li>
+                            <li>Healthcare network administrators can have access to an added layer or protect against malware threats.</li>
                             <li>Top 10 Ransomware Families are pictured in the displayed figure.</li>
                         </ul>
                     </div>
+                    <div class="row">
+                        <h5>Tools Used:</h5>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li>ipinfo.io</li>
+                            <li>tableau</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col">
+                <!-- <div class="col">
                     <br>
                     <img src="../../assets/img/figure7.png" width="75%" height="75%">
-                </div>
+                </div> -->
             </div>
             <br>
 
