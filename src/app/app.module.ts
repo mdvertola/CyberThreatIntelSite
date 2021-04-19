@@ -15,6 +15,7 @@ import { IntelligenceBuyInComponent } from './intelligence-buy-in/intelligence-b
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { VisualizationsComponent } from './visualizations/visualizations.component';
 import { KeyInsightsComponent } from './key-insights/key-insights.component';
+import { OperationalIntelligenceComponent } from './operational-intelligence/operational-intelligence.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { KeyInsightsComponent } from './key-insights/key-insights.component';
     IntelligenceBuyInComponent,
     AnalyticsComponent,
     VisualizationsComponent,
-    KeyInsightsComponent
+    KeyInsightsComponent,
+    OperationalIntelligenceComponent
   ],
   imports: [
     BrowserModule,

@@ -49,6 +49,7 @@ export class NavComponent implements OnInit {
   }
 
 
+
   about(){
     this.router.navigate(['about'])
   }
